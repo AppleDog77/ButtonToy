@@ -1,0 +1,18 @@
+charset,UTF-8
+
+name,ButtonToy
+type,ghost
+
+shiori,yaya.dll
+
+craftman,Odie
+craftmanurl,https://odiesocean.wordpress.com/
+
+sakura.name,ButtonToy
+kero.name,
+
+icon,button.ico
+
+sstp.allowunspecifiedsend,0
+
+balloon,Balloons Balloon Button Version

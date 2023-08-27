@@ -1,0 +1,36 @@
+OnAiTalk
+{
+	if CHAIN.IDName == ""
+	{
+		LastTalk = RandomTalk
+	}
+	else
+	{
+		LastTalk = ChainTalk
+	}
+	LastTalk
+}
+
+RandomTalk : nonoverlap_pool
+{
+	"\0\s[0]Aren't you going to push my buttons?\e"
+	"\0\s[0]Please push the buttons!\e"
+	"\0\s[0]I love it when you push my buttons.\e"
+	"\0\s[0]Push the buttons, please!\e"
+	"\0\s[0]So many fun things happen when you push the buttons.\e"
+	"\0\s[0]It's always good to push the buttons.\e"
+	"\0\s[0]Pushing buttons is good for your soul.\e"
+	"\0\s[0]Button pushing sure is fun!\e"
+	"\0\s[0]Pressing buttons is the best thing in life.\e"
+	"\0\s[0]Isn't pushing buttons so satisfying?\e"
+	"\0\s[0]All you need to do is push the buttons.\e"
+	"\0\s[0]The happiest thing a human can do is press buttons.\e"
+	"\0\s[0]The meaning of life is pushing buttons.\e"
+	"\0\s[0]You don't need to do anything else in life; just push the buttons.\e"
+	"\0\s[0]The best invention that humanity has made is the button.\e"
+	"\0\s[0]Buttons are life. Everything else is a distraction. Eliminate distractions, and push buttons!\e"
+	"\0\s[0]Buttons! Weeeee!\e"
+	"\0\s[0]B - \w6U - \w6T - \w6T - \w6O - \w6N - \w6S. Buttons!\e"
+	"\0\s[0]Push the buttons, and be enlightened.\e"
+	"\0\s[0]Pressing buttons 24 hours and 7 days every week is the best life! Woo!\e"
+}

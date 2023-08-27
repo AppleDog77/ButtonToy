@@ -1,0 +1,6 @@
+charset,UTF-8
+type,ghost
+
+name,ButtonToy
+directory,od_buttontoy
+balloon.directory,balloons_balloon_gzo

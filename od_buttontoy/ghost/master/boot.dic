@@ -1,0 +1,54 @@
+OnFirstBoot
+{
+	//If you add variables, make sure to initialize them here!
+	//Note - I haven't added anything about username or pronouns here because it's all handled by the SSP prefs
+	stroke = 0
+	LastTalk = ""
+	
+	"\1\s[10]\0\s[0][What a cool toy! I didn't order it though, it came with some other package I had ordered in the mail. Weird...\w8\w8 Oh well! Maybe it'll be fun to mess around with! I wonder what'll happen if I push these buttons...]\w8\n\n[half]Doo be doo be\w8 doo doo\w5 doo be doo be\w8 doo doo!\w8 Welcome to ButtonToy! Make fun surprises happen by pushing the buttons!\e"
+}
+
+OnInitialize
+{
+	//If you want some variables to reset on boot, put them here. This event will happen even if you add other events like OnGhostChanged
+	
+	//If you add new variables in updates, I recommend initializing them like so:
+	//if !ISVAR("NewVariable"); NewVariable = 0
+	//This means that it will only set the new variable if the user doesn't already have it, so that their variables don't get overwritten
+	
+	if reference0 != "reload" //For things you want to reset EXCEPT when just reloading; a convenience for you the dev, basically
+	{
+		LastTalk = ""
+	}
+}
+
+OnBoot
+{
+	_temp = SPLIT(SHIORI3FW.UserBirthday,":")
+	_user_birthday = "%(_temp[2])/%(_temp[1])" //M/D, if you want it D/M you can switch it around
+	_today = "%(_day)/%(_month)" //Again, switch this around if using D/M
+	
+	"\1\s[10]\0\s[0]"
+	--
+	if _today == _user_birthday
+	{
+		"\0\s[0]Happy birthday, %(username).\w8\n\n[half][How did the toy know my name and that it's my birthday? This 'ButtonToy' is getting stranger and stranger...]"
+	}
+	elseif _today == "1/1" //You can add whatever cool dates you want with more elseifs here
+	{
+		"\0\s[0]Happy %(year)!"
+	}
+	else //Normal boot
+	{
+		"\0\s[0]Doo be doo be\w8 doo doo\w5 doo be doo be\w8 doo doo!"
+		"\0\s[0]Welcome to ButtonToy! Make fun surprises happen by pushing the buttons!"
+	}
+}
+
+OnClose
+{
+	"\0\s[1]Bye bye! Hope to see you very soon!"
+	"\0\s[1]I don't know what else one can do in life other than pushing buttons, but goodbye I guess."
+	--
+	"\w8\w8\-" //This is what makes the ghost close (after a short pause), do not remove the \- , and MAKE SURE you don't use a \e before this point or it won't work
+}

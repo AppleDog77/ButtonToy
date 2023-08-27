@@ -1,0 +1,105 @@
+//Separate from the menus because you could put other interactions here, like poking or booping or punching or asking about various hotspots
+OnMouseDoubleClick
+{
+	if reference4 == "orngbutton"
+	{
+		"\0\s[0]Hey! Do not push that button! It is sensitive!\e"
+		"\0\s[0]That button feels weird...\w8 Do not push it!\e"
+		"\0\s[0]Push another button, please! This one is shy...\e"
+ 	}
+ 	elseif reference4 == "purpbutton"
+	{
+		"\0\s[0]\b2You wanna play? Great!\w5\0\s[0]\n\n"
+		"\0\s[0]\b2Hooray! I \f[bold,true]love\f[bold,false] playing games, as well as buttons.\w5\n\n"
+		--
+		"\![*]\q[Search the Words,OnStartWordSearch]\n/
+		\![*]\q[Hanging Man,OnStartHangman]\n/
+		\![*]\q[Scissors-Paper-Rock,OnStartRPS]\n/
+		\![*]\q[Jumbled Up,OnJuniorJumble]\n\n/
+		\![*]\q[No games right now,OnManQuit]\e"
+ 	}
+ 	elseif reference4 == "yellbutton"
+	{
+		"\0\s[0]Want me to tell you a story? Cool! Once upon a time...\w8\n Ooh! There was a man named Jack. He was on an epic quest for a treasure which was %(lovelycolors) in color.\w8\n He had to defeat various monsters on the journey, which represented his various fears such as his fear of heights, his fear of spiders, and his fear of clouds. Regular clouds, not stormy ones. He loved storms!\w8\n He finally found the treasure deep under the sea. The End.\e"
+		"\0\s[0]Want me to tell you a story? Cool! Once upon a time...\w8\n There lived a princess in a castle who had short blue hair. The princess loved to twirl prettily in the huge dance hall. Her favorite dress was a long, flowing, %(lovelycolors) dress.\w8\n One day, she woke up to find that her dress was gone from her closet! She screamed.\w8\n She finally found it in a monster's lair, and decided not to take it from the monster, leaving the lair without her beautiful dress, forever. The End.\e"
+		"\0\s[0]Want me to tell you a story? Cool! Once upon a time...\w8\n There was a cute bunny in a cave. Their ears twitched, and their nose sniffed as they explored the cave. They heard some awful singing from deep inside the cave, so they tried to run in the opposite direction. Alas!\w8\n They came face to face with the terrible singer, a red bird whose big dream was to be a famous singer.\n 'I'm Tom,'\w8 he said. 'Do you like my singing? I bet you did, otherwise you wouldn't have come here.'\w8\n 'I'm lost', said the rabbit, 'and I'm trying to leave this cave. Can you help?'\w8\n 'Only if you tell me what you think of my singing,' said Tom.\w8\n Afraid Tom wouldn't help them if they said they didn't, they lied and said they did. 'Great to hear!' cheeped the red bird. 'Follow me.'\w8\n The rabbit finally made their escape out of the cave. The End.\e"
+		"\0\s[0]Want me to tell you a story? Cool! Once upon a time...\w8\n There lived a mermaid in the Pacific Ocean named Trisha who had a brown tail. She was jealous of the other mermaids who had pretty rainbow tails. It didn't help that the other mermaids teased her for her brown tail. They only played with her when she dyed her tail rainbow, but the dye would wear off after 24 hours, so every day, she would dye her tail, and every day, the dye would become less effective, showing more and more of her brown tail.\w8\n One of the rainbow-tailed mermaids, Finch, thought it was silly to tease her just because of her tail, and only did it to get along with the others.\w8\n One day, the rainbow-tailed mermaids Jess and Daisy were exploring a sunken ship, but while Daisy was staring in awe at a shiny pearl, a shark attacked the duo as the ship was his home.\w8\n Daisy was badly injured and Jess carried her to the party the other rainbow-tailed mermaids were attending, but nobody heard her cry for help except Trisha, who helped take her to the doctor.\w8\n Daisy had to recover for a month, and since Daisy was the leader, everyone was distraught. They decided to blame Trisha for the accident, but Finch argued that was ridiculous and declared she was friends with Trisha. The End.\e"
+		"\0\s[0]Want me to tell you a story? Cool! Once upon a time...\w8\nThere was a %(lovelycolors) spider who loved making friends, but all the bugs were afraid of her. One day, all the butterflies were going for a big party. The spider weaved her web so high that some of the butterflies got caught in it.\w8\n The other ones escaped and flew off to the party. The butterflies who got caught in the web were invited to the spider's dance party. They had a lot of fun dancing and singing with the spider.\w8\n She set them free from her web after the dance party was over. The butterflies told everyone about the fun dance party they had, and no one was afraid of the spider anymore. The End.\e"
+		"\0\s[0]Want me to tell you a story? Cool! Once upon a time...\w8\nThere lived a black and white cat, Felix, and a black and white dog, Max, who were complete enemies. Felix loved to cause mischief to his owner, Jim. He loved making Jim trip over him, sitting on his newspaper, scratching his legs, walking on his keyboard, and pouncing on rats in the backyard and offering them to Jim. Jim would pet Felix often whenever he did this, or just in general.\w8\n Every time he caused mischief, Max would bark and scold Felix, but the kitty wouldn't stop. He'd just yawn at Max. He also loved to fight with Max at least once every hour, which was very annoying for Jim.\w8\n One day, Felix was just about to pounce on a rat, when Max barked, surprising Felix. He jumped high into the sky, and landed onto the roof of the house. He was afraid of heights, so he meowed over and over.\w8\n Reluctantly, Max decided to help Felix, and he barked loudly and repeatedly, making Jim head outside to see what was the matter. Jim gasped upon seeing Felix on the roof, and he brought a ladder, climbed up, and beckoned Felix to climb on him. Felix felt bad about troubling his owner, and carefully climbed into Jim's arms.\w8\n They all headed back into the house, and from then on, whenever Felix felt the urge to cause mischief to his owner, or fight with Max, he would scratch his scratching post, play with Max, or play with his feather toys.\w8\n But Max did allow him to stretch on Jim's keyboard. Felix and Max became best friends. The End.\e"
+		"\0\s[0]Want me to tell you a story? Cool! Once upon a time...\w8\n There was a red bird who lived in Jewelbed Forest named Tom who dreamed of being a famous singer. The only problem?\w5 His singing was atrocious!\w5 But he was very sensitive, and so no one else would tell him the truth.\w8\n He would 'sing' all day; only at night would everyone get a respite from Tom's 'singing'.\w8\n One day, a newcomer to the forest named Boris Badger was so annoyed by Tom singing all day that he walked straight up to Tom and criticized everything about Tom's 'singing'. How did Tom respond? Tom decided to...\w8\n %(tomending) The End. This story has a different ending each time I tell it!\e"
+ 	}
+ 	elseif reference4 == "tealbutton"
+	{
+		"\0\s[0]I'm made by JoyLeaf Corp at joyleafcorp.com! We make wacky wonderful toys for kids!\e"
+		"\0\s[0]JoyLeaf! Where kids can play away all day, I say!\e"
+		"\0\s[0]Our other products include RabbitWorld, PlushTown, ColorCycle, and many, many more! Go to joyleafcorp.com and check us out!\e"
+ 	}
+ 	elseif reference4 == "pinkbutton"
+	{
+		"\0\s[0]%(selfcare)\e"
+ 	}
+ 	elseif reference4 == "greenbutton"
+	{
+		"\0\s[0]Want me to tell you a randomized story? Cool! Once upon a time...\w8\n You land in a %(landscape) world known as %(worldnames), where %(adjectiveshirt) %(nounshoes)s & %(adjectiveshirt) %(nounshoes)s live, %(verbpants) & %(verbpants).\w8\n Population: %(numberunderwear).\w8\n '%(exclamationbandana)!' you say, %(adverbanklet) taking it all in, deciding to go %(verbpants) with the %(lovelycolors) inhabitants. The End.\e"
+		"\0\s[0]Want me to tell you a randomized story? Cool! Once upon a time...\w8\n %(namehat) was a %(adjectiveshirt) person who loved taking care of %(namehat), their pet %(nounshoes).\w8\n The pet decided to go %(verbpants) with their friends in the %(landscape) lands of \n'%(nounshoes)-%(nounshoes)', & our hero was shocked to find their pet was gone!\w8\n They called %(adverbanklet) and called %(adverbanklet) for them, but they never came...\w8\n Until %(numberunderwear) days later, when they finally returned to their %(verbpants) home. '%(exclamationbandana)!' the star of our story said. The End.\e"
+		"\0\s[0]Want me to tell you a randomized story? Cool! Once upon a time...\w8\n Ooh! There was a %(nounshoes) named %(namehat). They were on an epic quest for a %(adjectiveshirt) %(nounshoes) which was %(lovelycolors) in color.\w8\n They had to %(verbtrousers) various monsters on the journey, which represented their various fears such as their fear of %(nounshoes)s, their fear of %(nounshoes)s, and their fear of %(nounshoes)s. They also feared regular %(nounshoes)s, but not %(adjectiveshirt) ones. They loved those!\w8\n They finally found it on a %(landscape) land. The End.\e"
+		"\0\s[0]Want me to tell you a randomized story? Cool! Once upon a time...\w8\n There lived a princess in a %(lovelycolors) castle who had %(adjectiveshirt) %(lovelycolors) hair. The princess loved %(verbpants) %(adverbanklet) in the huge %(verbpants) hall. Her favorite dress was a %(adjectiveshirt), %(adjectiveshirt), %(lovelycolors) dress.\w8\n One day, she woke up to find that her dress was gone from her closet! She %(verbsocks).\w8\n She finally found it in a %(adjectiveshirt) %(lovelycolors) monster's lair, and decided not to take it from the %(adjectiveshirt) %(lovelycolors) monster, leaving the lair without her %(adjectiveshirt) dress, forever. The End.\e"
+		"\0\s[0]Want me to tell you a story? Cool! Once upon a time...\w8\nThere lived a %(lovelycolors) %(nounshoes), Felix, and a %(lovelycolors) %(nounshoes), Max, who were complete enemies. Felix loved to cause mischief to his owner, Jim. He loved making Jim trip over him, %(verbpants) on his %(nounshoes),  %(verbpants) on his legs, %(verbpants) on his %(nounshoes), and pouncing on %(nounshoes)s in the backyard and offering them to Jim. Jim would pet Felix often whenever he did this, or just in general.\w8\n Every time he caused mischief, Max would %(verbscarves) Felix, but the %(nounshoes) wouldn't stop. He'd just %(verbsweaters) at Max. He also loved to %(verbsweaters) with Max at least once every hour, which was very annoying for Jim.\w8\n One day, Felix was just about to %(verbscarves) on a %(nounshoes), when Max %(verbsocks), surprising Felix. He jumped high into the sky, and landed onto the %(nounshoes) of the house. He was afraid of %(nounshoes)s, so he %(verbsocks) over and over.\w8\n Reluctantly, Max decided to help Felix, and he barked loudly and repeatedly, making Jim head outside to see what was the matter. Jim gasped upon seeing Felix on the %(nounshoes), and he brought a %(nounshoes), %(verbsocks) up, and beckoned Felix to climb on him. Felix felt bad about troubling his owner, and carefully %(verbsocks) into Jim's arms.\w8\n They all headed back into the house, and from then on, whenever Felix felt the urge to cause mischief to his owner, or %(verbsweaters) with Max, he would %(verbtrousers) his %(verbpants) post,  %(verbsweaters) with Max, or %(verbsweaters) with his %(nounshoes) toys.\w8\n But Max did allow him to %(verbscarves) on Jim's %(nounshoes). Felix and Max became best friends. The End.\e"
+		"\0\s[0]Want me to tell you a story? Cool! Once upon a time...\w8\nThere was a %(lovelycolors) spider who loved making friends, but all the %(nounshoes)s were afraid of her. One day, all the butterflies were going for a big party. The spider %(verbsocks) her web so high that some of the butterflies got caught in it.\w8\n The other ones escaped and %(verbsocks) off to the party. The butterflies who got caught in the web were invited to the spider's '%(verbsweaters)' party. They had a lot of fun %(verbpants) and %(verbpants) with the spider.\w8\n She set them free from her web after the '%(verbsweaters)' party was over. The butterflies told everyone about the fun '%(verbsweaters)' party they had, and no one was afraid of the spider anymore. The End.\e"
+		"\0\s[0]Want me to tell you a randomized story? Cool! Once upon a time...\w8\n There was a %(lovelycolors) %(adjectiveshirt) %(nounshoes) who lived in '%(nounshoes)-%(nounshoes)' forest named Tom who dreamed of being a famous singer. The only problem?\w5 His singing was atrocious!\w5 But he was very %(adjectiveshirt), and so no one else would tell him the truth.\w8\n He would 'sing' all day; only at night would everyone get a respite from Tom's 'singing'.\w8\n One day, the %(nounshoes)s of the forest were so annoyed by Tom singing all day that they came %(verbpants) straight up to Tom and criticized everything about Tom's 'singing'. How did Tom respond? Tom decided to...\w8\n %(randomtomending) The End.\e"
+		"\0\s[0]Randomized Advertisement: Our other products include %(nounshoes)%(nounshoes), %(nounshoes)%(nounshoes), %(nounshoes)%(nounshoes), and many, many more! So %(verbscarves) to %(nounshoes)%(nounshoes).com and check us out!\e"
+		"\0\s[0]Want me to generate a random username for you? Here goes:\w8 %(nounshoes)%(nounshoes)_%(numberunderwear)! Hopefully that name is to your liking and it's available at whatever site you intend to use it at.\e"
+	}
+ 	elseif reference4 == "offbutton"
+	{
+		"\0\s[0]Confirm Turn Off?\n\n\![*]\q[Yes,OnClose]\n\![*]\q[NO!,cancelnodialogue]\e"
+ 	}
+ 	elseif reference5 == 0 //reference5 is the mouse button being clicked, in this case a left click
+	{
+		//reference3 is which character is being clicked
+		//If you want to add double click interactions, reference4 will be the name of the hitbox the mouse is over
+		if reference3 == 0
+		{
+			OnSakuraMenu
+		}
+		else
+		{
+			OnKeroMenu
+		}
+	}
+}
+
+OnMouseMove
+{
+	if reference4 != ""
+	{
+		stroke++
+		
+		if stroke % 40 == 0
+		{
+			if reference3 == 0; OnMouseMove.Sakura
+			else; OnMouseMove.Kero
+		}
+	}
+}
+
+OnMouseMove.Sakura
+{
+	if reference4 == "head"
+	{
+		"\0\s[0]Pet the buttons."
+	}
+}
+
+OnMouseMove.Kero
+{
+	if reference4 == "head"
+	{
+		"\1\s[10]Petting..."
+	}
+}
+
+OnMouseLeaveAll
+{
+	stroke = 0
+}
