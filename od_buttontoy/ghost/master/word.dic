@@ -188,6 +188,7 @@ nounshoes
 "marshmallow"
 "cake"
 "pie"
+"donut"
 "toon"
 "game"
 "character"
@@ -227,6 +228,7 @@ verbpants //for present progressive tense. I wish I could find a way to not make
 "partying"
 "kissing"
 "chirping"
+"slithering"
 }
 
 verbtrousers //for the monsters
@@ -259,6 +261,7 @@ verbscarves //for simple present tense
 "celebrate"
 "tap"
 "kiss"
+"slither"
 }
 
 verbsocks //for past tense
@@ -292,6 +295,7 @@ verbsocks //for past tense
 "partied"
 "kissed"
 "chirped"
+"slithered"
 }
 
 verbsweaters //full list of verbs
@@ -320,6 +324,7 @@ verbsweaters //full list of verbs
 "cry"
 "celebrate"
 "tap"
+"slither"
 }
 
 adjectiveshirt
@@ -395,10 +400,14 @@ namehat
 "Griffon"
 "Harry"
 "James"
+"Mike"
 "Nathan"
 "Carl"
 "Merle"
 "Steve"
+"Homer"
+"Lisa"
+"Seymour"
 "Pearl"
 "Apple"
 "Lemon"
@@ -410,6 +419,7 @@ namehat
 "David"
 "Jade"
 "Opal"
+"Snoopy"
 "Sam"
 "Max"
 "Skipper"
@@ -461,7 +471,7 @@ worldnames
 
 //And if you're not interested in making word lists like this at all, you can just remove this whole file! Or use it for something else, you do you
 
-//Written by Zichqec https://zichqec.github.io/s-the-skeleton/
+//Written by Zichqec https://ukagaka.zichqec.com/
 
 //If this all looks scary to you, no worries! All you need to do is set a few options in OnStartWordSearch, set up dialogue in WordSearchDialogue, and then add your own pool of words for it to choose from in WordSearchWords. If it gives you any trouble, let me know!
 
@@ -520,7 +530,7 @@ WordSearchDialogue
 	}
 	elseif _argv[0] == "Invalid Move" //If the user tried an illegal diagonal move
 	{
-		"You can't move like that.\w8\w8 Moves have to be completely straight lines;\w4 up,\w4 down,\w4 left,\w4 right,\w4 or diagonal."
+		"You can't move like that.\w8 Moves have to be completely straight lines;\w4 up,\w4 down,\w4 left,\w4 right,\w4 or diagonal."
 	}
 	elseif _argv[0] == "Found Word" //If the user found a word - _argv[1] is the word that was found
 	{
@@ -583,17 +593,6 @@ WordSearchWords : array
 	"lemon"
 	"gemstone"
 	"diamond"
-	"dragon"
-	"dinosaur"
-	"sapota"
-	"carrot"
-	"cucumber"
-	"papaya"
-	"pineapple"
-	"grape"
-	"lemon"
-	"gemstone"
-	"diamond"
 	"apricot"
 	"melon"
 	"kiwifruit"
@@ -602,6 +601,7 @@ WordSearchWords : array
 	"snakefruit"
 	"orange"
 	"motorcycle"
+	"Press"
 }
 
 OnWordSearch
@@ -1191,7 +1191,7 @@ CreateWordSearch //:deargodhelpme:
 	}
 }
 
-//Written by Zichqec https://zichqec.github.io/s-the-skeleton/index.html
+//Written by Zichqec https://ukagaka.zichqec.com/
 
 OnStartHangman //Sets up starting variables
 {
@@ -1425,7 +1425,7 @@ OnWordSearchQuit
 	"\_q\n\![*]\q[Play again,OnStartWordSearch]  \n\![*]\q[I'm done,cancelnodialogue]\e"
 }
 
-//Written by Zichqec https://zichqec.github.io/s-the-skeleton/index.html
+//Written by Zichqec https://ukagaka.zichqec.com/
 
 OnStartRPS
 {
@@ -1539,7 +1539,7 @@ OnManQuit
 	"\0\s[0]Quitting, eh? That's...\w5 OK! Let's push another button!\e"
 }
 
-//Written by Zichqec https://zichqec.github.io/s-the-skeleton/
+//Written by Zichqec https://ukagaka.zichqec.com/
 
 //To call the function, you can either call the function in your code like this:
 //Capitalize(SomeEnvelope) or Capitalize("some text")
@@ -1553,7 +1553,7 @@ Capitalize
 	_argv[0] = INSERT(_argv[0],0,TOUPPER(_buffer)) //Making the character in _buffer uppercase and inserting it back into _argv[0]
 	_argv[0] //Returns the capitalized word
 }
-//Written by Zichqec https://zichqec.github.io/s-the-skeleton/
+//Written by Zichqec https://ukagaka.zichqec.com/
 
 //Main game window
 OnJuniorJumble

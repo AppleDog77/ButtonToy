@@ -87,7 +87,7 @@ OnUpdateFailure //If the update fails
 	{
 		_file = SPLITPATH(reference1)[2] + SPLITPATH(reference1)[3] //This gets the name and extension of the offending file
 		
-		"\0\s[0]The MD5 values don't match.\w8 Contact the ghost author, OdieDogXP, aka PonDog, on Discord and let them know that '%(_file)' is giving an MD5 error. In the meantime, back to pushing buttons!"
+		"\0\s[0]The MD5 values don't match.\w8 Contact the ghost author, OdieDogXP, aka PonDog, on Discord or through Ladybug Lane, and let them know that '%(_file)' is giving an MD5 error. In the meantime, back to pushing buttons!"
 	}
 	elseif reference0 == "artificial" //If the user cancels the update by double clicking the balloon
 	{

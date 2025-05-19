@@ -24,15 +24,15 @@ OnInitialize
 
 OnBoot
 {
-	_temp = SPLIT(SHIORI3FW.UserBirthday,":")
-	_user_birthday = "%(_temp[2])/%(_temp[1])" //M/D, if you want it D/M you can switch it around
-	_today = "%(_day)/%(_month)" //Again, switch this around if using D/M
+	_temp = SHIORI3FW.UserBirthday
+	_user_birthday = "%(_temp[1])/%(_temp[2])" //M/D, if you want it D/M you can switch it around
+	_today = "%(month)/%(day)" //Again, switch this around if using D/M
 	
 	"\1\s[10]\0\s[0]"
 	--
 	if _today == _user_birthday
 	{
-		"\0\s[0]Happy birthday, %(username).\w8\n\n[half][How did the toy know my name and that it's my birthday? This 'ButtonToy' is getting stranger and stranger...]"
+		"\0\s[0]Doo doo be\w8 doo doo be\w8 be be\w5 doo doo be doo doo be\w8 doo doo!\w8 Happy birthday, %(username).\w8\n\n[half][How did the toy know my name and that it's my birthday? This 'ButtonToy' is getting stranger and stranger...]"
 	}
 	elseif _today == "1/1" //You can add whatever cool dates you want with more elseifs here
 	{
@@ -47,8 +47,8 @@ OnBoot
 
 OnClose
 {
-	"\0\s[1]Bye bye! Hope to see you very soon!"
-	"\0\s[1]I don't know what else one can do in life other than pushing buttons, but goodbye I guess."
+	"\0\s[1]Bye bye! Hope to see you very soon! Doo doo DOO!"
+	"\0\s[1]I don't know what else one can do in life other than pushing buttons, but goodbye I guess. Doo doo DOO!"
 	--
 	"\w8\w8\-" //This is what makes the ghost close (after a short pause), do not remove the \- , and MAKE SURE you don't use a \e before this point or it won't work
 }

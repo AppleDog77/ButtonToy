@@ -1,1 +1,3 @@
 balloons_balloon_gzo/,noupdate
+ghost/master/profile/,nonar,noupdate
+ghost/master/yaya_variable.cfg,nonar,noupdate

@@ -6,7 +6,7 @@ type,ghost
 shiori,yaya.dll
 
 craftman,Odie
-craftmanurl,https://odiesocean.wordpress.com/
+craftmanurl,https://ladybug-lane.neocities.org/
 
 sakura.name,ButtonToy
 kero.name,
